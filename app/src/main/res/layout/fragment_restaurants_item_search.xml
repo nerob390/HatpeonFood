@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.RestauransSearchFragment">
+
+    <!--Search-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <!--Search-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/theme_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:background="@drawable/search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="40dp">
+
+
+                <ImageView
+                    android:id="@+id/searIcon"
+                    android:layout_width="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/search_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    app:tint="@color/shadow_color"
+                    android:layout_height="20dp"/>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:hint="Search for restaurants menu"
+                    android:textColor="@color/shadow_color"
+
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    app:queryBackground="@android:color/transparent" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/cartDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPrice"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/checkOutLiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/theme_color"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/cartItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/circle_stock"
+                            android:text="10"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/roboto_bold"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:id="@+id/CheckOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center_vertical"
+                            android:text="View your cart"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/totalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Tk 230"
+                            android:layout_alignParentRight="true"
+
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+
+
+                            android:paddingLeft="5dp"
+                            android:textSize="15dp"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:src="@drawable/progress" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:indeterminateTint="@color/theme_color"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

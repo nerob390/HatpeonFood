@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:background="@drawable/shadow"
+    android:id="@+id/next"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round"
+
+            android:backgroundTint="@color/theme_color"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_reguler"
+                android:text="VOUCHER : CRAZY33"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/a"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="100">
+                    <TextView
+                        android:id="@+id/restaruent_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="80"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#393939"
+                        android:maxLines="1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:padding="5dp"
+                        android:text="Home-Made Food"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="20">
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:numStars="5"
+                            android:stepSize=".5"
+                            android:theme="@style/RatingBarTheme"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:rating="5" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#393939"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:maxLines="2"
+                    android:layout_marginTop="-9dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Best deals on your favourites!"/>
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#393939"
+                    android:padding="5dp"
+                    android:layout_marginTop="-9dp"
+                    android:textSize="14dp"
+                    android:maxLines="2"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Best deals on your favourites!"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearance="@style/menuImage"
+                    app:srcCompat="@drawable/food" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/openLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/close_now"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/closeNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sorry,We'ar close now"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_centerInParent="true"
+                android:textColor="#FF0C1F"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opens in"
+                android:layout_below="@id/closeNow"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:lineSpacingExtra="-2dp"
+                android:fontFamily="@font/roboto_reguler"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/open_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:52"
+                android:textStyle="bold"
+                android:layout_below="@id/open"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:lineSpacingExtra="-2dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--ToolBar-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolabr"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="100"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/theme_color"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/userLiner"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_weight="100">
+                    <ImageView
+                        android:id="@+id/locationImage"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/location"
+                        app:tint="@color/white"
+                        android:layout_height="30dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/deliveryTo"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_height="match_parent"
+                            android:text="@string/deliver_to"
+                            android:fontFamily="@font/roboto_light"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/myAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="2.5"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/userImage"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/user"
+                            app:tint="@color/white" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <!--Search-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolabr"
+            android:background="@color/theme_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:background="@drawable/search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="40dp">
+
+
+                <ImageView
+                    android:id="@+id/searIcon"
+                    android:layout_width="20dp"
+                    android:src="@drawable/search_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    app:tint="@color/shadow_color"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/searIcon"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search_for_shops_resturents"
+                    android:textColor="@color/shadow_color"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp"
+            app:cardMaxElevation="10dp"
+            android:layout_height="wrap_content">
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                app:autoPlayDelay="3000"
+                app:autoPlay="true"
+                android:layout_height="160dp" />
+        </androidx.cardview.widget.CardView>
+        <!--Category-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="100"
+            android:layout_height="235dp">
+
+            <LinearLayout
+                android:id="@+id/restaurants"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/shadow"
+                android:layout_weight="48">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/shadow_black"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Restaurants\nFood"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#393939"
+                    android:padding="2dp"
+                    android:textSize="14dp"
+                    android:maxLines="2"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Best deals on your \nfavourites!"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/kaschi"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_height="105dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="52">
+
+                <LinearLayout
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/shadow"
+                    android:layout_weight="0.85">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#393939"
+                        android:maxLines="1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:padding="10dp"
+                        android:text="Home-Made Food"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#393939"
+                        android:padding="2dp"
+                        android:textSize="14dp"
+                        android:maxLines="2"
+                        android:layout_marginTop="-5dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="Best deals on your \nfavourites!"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:src="@drawable/home_made"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="-15dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="65dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/shadow"
+                    android:layout_weight="1.15">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#393939"
+                        android:maxLines="1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:padding="10dp"
+                        android:text="Ready To Cook"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="100">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#393939"
+                            android:padding="2dp"
+                            android:textSize="14dp"
+                            android:maxLines="2"
+                            android:layout_marginTop="-5dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="Best deals on your \nfavourites!"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:src="@drawable/ready_to_cook"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/shadow_black"
+            android:textSize="22dp"
+            android:layout_marginLeft="5dp"
+            android:text="Restaurants Near You"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rasturentRecycler"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+ <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+     android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:src="@drawable/progress" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:indeterminateTint="@color/theme_color"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

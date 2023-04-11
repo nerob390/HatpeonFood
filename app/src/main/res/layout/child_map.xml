@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center_horizontal"
+    android:padding="5dp"
+    android:layout_margin="2dp">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="wrap_content"
+       app:cardBackgroundColor="@color/theme_color"
+       app:cardCornerRadius="10dp"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center">
+
+           <ImageView
+               android:id="@+id/badge"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_centerVertical="true"
+               android:visibility="gone"
+               android:layout_toRightOf="@+id/text_lay"
+               android:background="@drawable/ic_launcher_background" />
+
+           <LinearLayout
+               android:id="@+id/text_lay"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="5dp">
+
+               <TextView
+                   android:id="@+id/title"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif"
+
+                   android:singleLine="true"
+                   android:text="title"
+                   android:textColor="#ffffff"
+                   android:textSize="15dp" />
+
+               <TextView
+                   android:id="@+id/snippet"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:fontFamily="sans-serif"
+                   android:gravity="center"
+                   android:text="Click the current location for exact location"
+                   android:textColor="#ffffff"
+                   android:textSize="12dp" />
+           </LinearLayout>
+
+       </RelativeLayout>
+
+
+
+   </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

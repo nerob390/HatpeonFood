@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="hatpeon.app.com.Fragment.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_home_to_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_restaruant"
+        android:name="hatpeon.app.com.Fragment.RestaurantsView"
+        tools:layout="@layout/fragment_restaurants_view" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_cuisine"
+        android:name="hatpeon.app.com.Fragment.CuisineFrament"
+        tools:layout="@layout/fragment_cuisine_frament" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_cuisine_restuarants"
+        android:name="hatpeon.app.com.Fragment.CuisineReataurants"
+        tools:layout="@layout/fragment_cuisine_reataurants" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_homecook"
+        android:name="hatpeon.app.com.Fragment.HomeMadeAndRedayToCookFragment"
+        tools:layout="@layout/fragment_home_made_and_reday_to_cook" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="hatpeon.app.com.Fragment.SearchFragment"
+        tools:layout="@layout/fragment_search" >
+    </fragment>
+
+    <dialog
+        android:id="@+id/navigation_bottom"
+        android:name="hatpeon.app.com.BottomShit.CustomBottomSheetDialogFragment"
+        tools:layout="@layout/fragment_custom_bottom_sheet_dialog" >
+
+    </dialog>
+    <dialog
+        android:id="@+id/navigation_search_bottom"
+        android:name="hatpeon.app.com.BottomShit.CustomBottomSheetSearchDialogFragment"
+        tools:layout="@layout/fragment_custom_bottom_sheet_dialog" >
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/navigation_bottom_search"
+        android:name="hatpeon.app.com.BottomShit.SearchBottomSheetDialogFragment"
+        tools:layout="@layout/fragment_custom_bottom_sheet_dialog" >
+
+    </dialog>
+
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="hatpeon.app.com.Fragment.CartFragment"
+        tools:layout="@layout/fragment_cart" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_checkOut"
+        android:name="hatpeon.app.com.Fragment.CheckOutFragment"
+        tools:layout="@layout/fragment_check_out" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="hatpeon.app.com.Fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home2"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_profile"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profileEdit"
+        android:name="hatpeon.app.com.Fragment.EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_change_password"
+        android:name="hatpeon.app.com.Fragment.PasswordChangeFragmnet"
+        tools:layout="@layout/fragment_password_change_fragmnet" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_my_address"
+        android:name="hatpeon.app.com.Fragment.MyAddressFragment"
+        tools:layout="@layout/fragment_my_address" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation__search_res"
+        android:name="hatpeon.app.com.Fragment.Search.SearchResturantView"
+        tools:layout="@layout/fragment_search_resturant_view" >
+    </fragment>
+
+</navigation>

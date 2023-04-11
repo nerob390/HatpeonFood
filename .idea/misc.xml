@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable-v24/check_out_shape.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable-v24/round_stock.xml" value="0.2205" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/back_tabs.xml" value="0.1465" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/button.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/circle.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/circle_image.xml" value="0.1465" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/circle_stock.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/close_now.xml" value="0.2" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/custom_edittext.xml" value="0.143" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/dot.xml" value="0.22" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/dot_shape.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/half_shape.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.1465" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.22" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.228" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.2185" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.228" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_minies.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1465" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/ic_outline_check_24.xml" value="0.229" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/line_shape.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/line_shape_profile.xml" value="0.228" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/news_bottom_nav_bg.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/offer_text.xml" value="0.227" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/order_success.xml" value="0.2415" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/round.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/round_outline.xml" value="0.143" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/round_shadow.xml" value="0.186" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/round_shape.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/round_stock.xml" value="0.2415" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/search.xml" value="0.1405" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/shadow.xml" value="0.143" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/stock_shadow.xml" value="0.241" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/tab_selected.xml" value="0.1465" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/u_shape.xml" value="0.1425" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/voucher_shape.xml" value="0.143" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/drawable/wave_shape.xml" value="0.197" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/activity_login.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/activity_maps.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/activity_order_tracking.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/activity_payment.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/already_in_cart.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/cart_child.xml" value="0.5265760197775031" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/cart_summary_child.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/child_map.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/close_now.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/cuisine_child.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/dialog.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_check_out.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_cuisine_frament.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_cuisine_reataurants.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_custom_bottom_sheet_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_edit_profile.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_finish.xml" value="0.153125" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_home.xml" value="0.19879518072289157" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_home_made_and_reday_to_cook.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_my_address.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_password_change_fragmnet.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_restaurans_search.xml" value="0.25" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_restaurants_item_search.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_restaurants_view.xml" value="0.5" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_search.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/fragment_search_resturant_view.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/login.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/menu_child.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/order_fail.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/order_success.xml" value="0.2421875" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/restaurant_child.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/restaurants_item_search_child.xml" value="0.33" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/restaurants_search_child.xml" value="0.5" />
+        <entry key="..\:/Users/Nerob Junior/AndroidStudioProjects/HatpeonFood/app/src/main/res/layout/tracking_child.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
